@@ -1,0 +1,11 @@
+{
+  "name": "ts-vsml",
+  "version": "1.0.0",
+  "description": "TypeScript type definitions for VSML scripting interface",
+  "main": "\"\"",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "VSML Consortium",
+  "license": "MIT"
+}

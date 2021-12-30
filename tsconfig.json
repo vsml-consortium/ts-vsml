@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "declaration": true,
+    "declarationDir": ".",
+    "emitDeclarationOnly": true,
+    "module": "umd"
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}
