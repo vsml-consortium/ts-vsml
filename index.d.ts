@@ -1,4 +1,7 @@
-﻿export interface World {
+﻿import type { MetaDocument } from './lib/dom/node';
+
+export interface World {
+    document: MetaDocument;
 }
 
 declare global {
