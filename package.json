@@ -4,13 +4,11 @@
   "description": "TypeScript type definitions for VSML scripting interface",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "typedoc --out docs/ --cname jsdocs.vsml.org --tsconfig tsconfig.json index.d.ts"
+    "build": "typedoc --out docs/ --tsconfig tsconfig.json index.d.ts"
   },
   "author": "VSML Consortium",
   "license": "MIT",
   "devDependencies": {
-    "typedoc": "^0.22.10",
-    "typedoc-plugin-cname": "^1.0.1",
     "typedoc-plugin-missing-exports": "^0.22.6"
   }
 }
