@@ -1,4 +1,5 @@
-import { EventTarget } from "../event";
+import { EventListenerCancellationToken, EventTarget, EventListener } from "../event/index";
+import { EventNames, EventWithListenerType } from "../event/listeners";
 
 /**
  * An interface querable with a selector.
@@ -95,6 +96,8 @@ export interface MetaNode extends Querable, EventTarget {
    * @param value attribute value
    */
   setAttributeNS(namespace: string, name: string, value: string): void;
+
+  addEventListener<Ev extends EventNames>(event: Ev, listener: EventWithListenerType[Ev]): EventListenerCancellationToken;
 }
 
 /**
