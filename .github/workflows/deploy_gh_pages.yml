@@ -20,6 +20,7 @@ jobs:
         run: |
           npm install
           bash -c "timeout --preserve-status 2m npm run build; true"
+          echo "jsdoc.vsml.org" > docs/CNAME
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/master' }}
